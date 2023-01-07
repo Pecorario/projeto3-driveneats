@@ -26,26 +26,37 @@
       <div class="container-options">
         <h2>Primeiro, seu prato</h2>
         <div class="container-cards">
-          <div class="card">
+          <div class="card plate" onclick="handleSelectCard(this, 'plate')">
             <img src="assets/frango_yin_yang.png" alt="" />
             <h3>Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
             <span>R$ 14,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
           </div>
 
-          <div class="card selected">
+          <div class="card plate" onclick="handleSelectCard(this, 'plate')">
             <img src="assets/frango_yin_yang.png" alt="" />
             <h3>Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
-            <span>R$ 14,90</span>
-            <ion-icon name="checkmark-circle" class="check-icon"></ion-icon>
+            <span>R$ 17,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card plate" onclick="handleSelectCard(this, 'plate')">
             <img src="assets/frango_yin_yang.png" alt="" />
             <h3>Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
-            <span>R$ 14,90</span>
+            <span>R$ 12,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
           </div>
         </div>
       </div>
@@ -53,25 +64,37 @@
       <div class="container-options">
         <h2>Agora, sua bebida</h2>
         <div class="container-cards">
-          <div class="card">
+          <div class="card drink" onclick="handleSelectCard(this, 'drink')">
             <img src="assets/coca-cola.png" alt="" />
             <h3>Coquinha gelada</h3>
             <p>Lata 350ml</p>
             <span>R$ 4,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card drink" onclick="handleSelectCard(this, 'drink')">
             <img src="assets/coca-cola.png" alt="" />
             <h3>Coquinha gelada</h3>
             <p>Lata 350ml</p>
-            <span>R$ 4,90</span>
+            <span>R$ 2,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card drink" onclick="handleSelectCard(this, 'drink')">
             <img src="assets/coca-cola.png" alt="" />
             <h3>Coquinha gelada</h3>
             <p>Lata 350ml</p>
-            <span>R$ 4,90</span>
+            <span>R$ 9,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
           </div>
         </div>
       </div>
@@ -79,25 +102,37 @@
       <div class="container-options">
         <h2>Por fim, sua sobremesa</h2>
         <div class="container-cards">
-          <div class="card">
+          <div class="card dessert" onclick="handleSelectCard(this, 'dessert')">
             <img src="assets/pudim.png" alt="" />
             <h3>Pudim</h3>
             <p>Apenas pudim</p>
             <span>R$ 7,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card dessert" onclick="handleSelectCard(this, 'dessert')">
             <img src="assets/pudim.png" alt="" />
             <h3>Pudim</h3>
             <p>Apenas pudim</p>
-            <span>R$ 7,90</span>
+            <span>R$ 3,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card dessert" onclick="handleSelectCard(this, 'dessert')">
             <img src="assets/pudim.png" alt="" />
             <h3>Pudim</h3>
             <p>Apenas pudim</p>
-            <span>R$ 7,90</span>
+            <span>R$ 10,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
           </div>
         </div>
       </div>
@@ -110,5 +145,6 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

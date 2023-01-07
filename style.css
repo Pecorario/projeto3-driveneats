@@ -7,6 +7,10 @@ body {
   background: #EEEEEE;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   width: 100%;
   height: 92px;
@@ -155,4 +159,8 @@ footer button {
   padding: 0 60px;
   
   font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
