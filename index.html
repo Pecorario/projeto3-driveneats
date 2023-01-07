@@ -26,33 +26,69 @@
       <div class="container-options">
         <h2>Primeiro, seu prato</h2>
         <div class="container-cards">
-          <div class="card plate" onclick="handleSelectCard(this, 'plate')">
-            <img src="assets/frango_yin_yang.png" alt="" />
-            <h3>Frango Yin Yang</h3>
-            <p>Um pouco de batata, um pouco de salada</p>
-            <span>R$ 14,90</span>
+          <div
+            class="card plate"
+            data-test="dish"
+            onclick="handleSelectCard(this, 'plate')"
+          >
+            <img src="assets/yakisoba.jpg" alt="Imagem do prato de Yakissoba" />
+            <h3 data-test="item-nome">Yakissoba</h3>
+            <p>Talharim frito com carne e legumes</p>
+            <span data-test="item-price">R$ 25,90</span>
             <ion-icon
               name="checkmark-circle"
               class="check-icon hidden"
             ></ion-icon>
           </div>
 
-          <div class="card plate" onclick="handleSelectCard(this, 'plate')">
-            <img src="assets/frango_yin_yang.png" alt="" />
-            <h3>Frango Yin Yang</h3>
+          <div
+            class="card plate"
+            data-test="dish"
+            onclick="handleSelectCard(this, 'plate')"
+          >
+            <img
+              src="assets/frango_yin_yang.png"
+              alt="Imagem do prato de Frango Ying Yang"
+            />
+            <h3 data-test="item-nome">Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
-            <span>R$ 17,90</span>
+            <span data-test="item-price">R$ 17,90</span>
             <ion-icon
               name="checkmark-circle"
               class="check-icon hidden"
             ></ion-icon>
           </div>
 
-          <div class="card plate" onclick="handleSelectCard(this, 'plate')">
-            <img src="assets/frango_yin_yang.png" alt="" />
-            <h3>Frango Yin Yang</h3>
-            <p>Um pouco de batata, um pouco de salada</p>
-            <span>R$ 12,90</span>
+          <div
+            class="card plate"
+            data-test="dish"
+            onclick="handleSelectCard(this, 'plate')"
+          >
+            <img
+              src="assets/frango_frito.jpg"
+              alt="Imagem do prato de Frango Frito"
+            />
+            <h3 data-test="item-nome">Frango Frito</h3>
+            <p>É frango e é frito</p>
+            <span data-test="item-price">R$ 29,90</span>
+            <ion-icon
+              name="checkmark-circle"
+              class="check-icon hidden"
+            ></ion-icon>
+          </div>
+
+          <div
+            class="card plate"
+            data-test="dish"
+            onclick="handleSelectCard(this, 'plate')"
+          >
+            <img
+              src="assets/lombo_xadrez.jpg"
+              alt="Imagem do prato de Lombo Xadrez"
+            />
+            <h3 data-test="item-nome">Lombo Xadrez</h3>
+            <p>Lombo suíno com cebola e pimentão</p>
+            <span data-test="item-price">R$ 32,90</span>
             <ion-icon
               name="checkmark-circle"
               class="check-icon hidden"
@@ -64,33 +100,54 @@
       <div class="container-options">
         <h2>Agora, sua bebida</h2>
         <div class="container-cards">
-          <div class="card drink" onclick="handleSelectCard(this, 'drink')">
-            <img src="assets/coca-cola.png" alt="" />
-            <h3>Coquinha gelada</h3>
+          <div
+            class="card drink"
+            data-test="drink"
+            onclick="handleSelectCard(this, 'drink')"
+          >
+            <img
+              src="assets/coca-cola.png"
+              alt="Imagem de uma lata de coca-cola"
+            />
+            <h3 data-test="item-nome">Coquinha gelada</h3>
             <p>Lata 350ml</p>
-            <span>R$ 4,90</span>
+            <span data-test="item-price">R$ 4,90</span>
             <ion-icon
               name="checkmark-circle"
               class="check-icon hidden"
             ></ion-icon>
           </div>
 
-          <div class="card drink" onclick="handleSelectCard(this, 'drink')">
-            <img src="assets/coca-cola.png" alt="" />
-            <h3>Coquinha gelada</h3>
-            <p>Lata 350ml</p>
-            <span>R$ 2,90</span>
+          <div
+            class="card drink"
+            data-test="drink"
+            onclick="handleSelectCard(this, 'drink')"
+          >
+            <img
+              src="assets/suco_laranja.jpg"
+              alt="Imagem de um copo de suco de laranja"
+            />
+            <h3 data-test="item-nome">Suco de Laranja</h3>
+            <p>Copo de 500ml</p>
+            <span data-test="item-price">R$ 8,90</span>
             <ion-icon
               name="checkmark-circle"
               class="check-icon hidden"
             ></ion-icon>
           </div>
 
-          <div class="card drink" onclick="handleSelectCard(this, 'drink')">
-            <img src="assets/coca-cola.png" alt="" />
-            <h3>Coquinha gelada</h3>
-            <p>Lata 350ml</p>
-            <span>R$ 9,90</span>
+          <div
+            class="card drink"
+            data-test="drink"
+            onclick="handleSelectCard(this, 'drink')"
+          >
+            <img
+              src="assets/heineken.jpg"
+              alt="Imagem de uma long neck de Heineken"
+            />
+            <h3 data-test="item-nome">Heineken</h3>
+            <p>Long neck gelada</p>
+            <span data-test="item-price">R$ 7,90</span>
             <ion-icon
               name="checkmark-circle"
               class="check-icon hidden"
@@ -102,33 +159,51 @@
       <div class="container-options">
         <h2>Por fim, sua sobremesa</h2>
         <div class="container-cards">
-          <div class="card dessert" onclick="handleSelectCard(this, 'dessert')">
-            <img src="assets/pudim.png" alt="" />
-            <h3>Pudim</h3>
+          <div
+            class="card dessert"
+            data-test="dessert"
+            onclick="handleSelectCard(this, 'dessert')"
+          >
+            <img src="assets/pudim.png" alt="Imagem de um pudim" />
+            <h3 data-test="item-nome">Pudim</h3>
             <p>Apenas pudim</p>
-            <span>R$ 7,90</span>
+            <span data-test="item-price">R$ 5,90</span>
             <ion-icon
               name="checkmark-circle"
               class="check-icon hidden"
             ></ion-icon>
           </div>
 
-          <div class="card dessert" onclick="handleSelectCard(this, 'dessert')">
-            <img src="assets/pudim.png" alt="" />
-            <h3>Pudim</h3>
-            <p>Apenas pudim</p>
-            <span>R$ 3,90</span>
+          <div
+            class="card dessert"
+            data-test="dessert"
+            onclick="handleSelectCard(this, 'dessert')"
+          >
+            <img
+              src="assets/mousse.jpg"
+              alt="Imagem de 4 copinhos de mousse de chocolate"
+            />
+            <h3 data-test="item-nome">Mousse</h3>
+            <p>Delicioso mousse de chocolate</p>
+            <span data-test="item-price">R$ 7,90</span>
             <ion-icon
               name="checkmark-circle"
               class="check-icon hidden"
             ></ion-icon>
           </div>
 
-          <div class="card dessert" onclick="handleSelectCard(this, 'dessert')">
-            <img src="assets/pudim.png" alt="" />
-            <h3>Pudim</h3>
-            <p>Apenas pudim</p>
-            <span>R$ 10,90</span>
+          <div
+            class="card dessert"
+            data-test="dessert"
+            onclick="handleSelectCard(this, 'dessert')"
+          >
+            <img
+              src="assets/biscoito_da_sorte.jpg"
+              alt="Imagem de um biscoito da sorte"
+            />
+            <h3 data-test="item-nome">Biscoito da sorte</h3>
+            <p>Melhor que trevo de 4 folhas</p>
+            <span data-test="item-price">R$ 2,90</span>
             <ion-icon
               name="checkmark-circle"
               class="check-icon hidden"
@@ -139,7 +214,12 @@
     </main>
 
     <footer>
-      <button class="button-disabled">
+      <button
+        class="btn"
+        data-test="order-btn"
+        onclick="handleSendOrder()"
+        disabled
+      >
         Selecione os 3 itens para fechar o pedido
       </button>
     </footer>
