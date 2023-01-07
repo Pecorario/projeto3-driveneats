@@ -1,40 +1,44 @@
-let order = [];
+const order = [];
 let textOrder;
+const valueIndex = 3;
+const titleIndex = 1;
+const iconIndex = 4;
+const numberOfItemsExpectedToOrder = 3;
 
 function handleSelectCard(card, type) {
   const selectedCard = document.querySelector(`.${type}.selected`);
 
   const formatedValue = Number(
-    card.children[3].innerText.replace('R$ ', '').replace(',', '.')
+    card.children[valueIndex].innerText.replace('R$ ', '').replace(',', '.')
   ).toFixed(2);
 
   if (selectedCard !== null) {
-    selectedCard.children[4].classList.add('hidden');
+    selectedCard.children[iconIndex].classList.add('hidden');
     selectedCard.classList.remove('selected');
 
     const typeIndex = order.findIndex(item => item.type === type);
 
     order[typeIndex] = {
-      type: type,
-      name: card.children[1].innerText,
+      type,
+      name: card.children[titleIndex].innerText,
       value: formatedValue
     };
   } else {
     order.push({
-      type: type,
-      name: card.children[1].innerText,
+      type,
+      name: card.children[titleIndex].innerText,
       value: formatedValue
     });
   }
 
-  if (order.length === 3) {
+  if (order.length === numberOfItemsExpectedToOrder) {
     const button = document.querySelector('.btn');
     button.removeAttribute('disabled');
     button.innerText = 'Fechar pedido';
   }
 
   card.classList.add('selected');
-  card.children[4].classList.remove('hidden');
+  card.children[iconIndex].classList.remove('hidden');
 }
 
 function handleSendOrder() {
