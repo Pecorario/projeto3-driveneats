@@ -19,6 +19,42 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <div class="container hidden">
+      <div class="modal hidden" data-test="confirm-order-modal">
+        <h3>Confirme seu pedido</h3>
+        <div class="item plate">
+          <p>Item1</p>
+          <span>Valor1</span>
+        </div>
+        <div class="item drink">
+          <p>Item2</p>
+          <span>Valor2</span>
+        </div>
+        <div class="item dessert">
+          <p>Item3</p>
+          <span>Valor2</span>
+        </div>
+        <div class="item total">
+          <p class="bold">TOTAL</p>
+          <span class="bold">Total</span>
+        </div>
+        <button
+          class="confirm bold"
+          onclick="handleSendOrder()"
+          data-test="confirm -order-btn"
+        >
+          Tudo certo, pode pedir!
+        </button>
+        <button
+          class="cancel bold"
+          onclick="handleCloseModal()"
+          data-test="cancel-order-btn"
+        >
+          Cancelar
+        </button>
+      </div>
+    </div>
+
     <header>
       <h1>DrivenEats</h1>
       <p class="subtitle">Sua comida em 6 minutos</p>
@@ -219,13 +255,12 @@
       <button
         class="btn"
         data-test="order-btn"
-        onclick="handleSendOrder()"
+        onclick="handleOpenModal()"
         disabled
       >
         Selecione os 3 itens para fechar o pedido
       </button>
     </footer>
-
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
   </body>
