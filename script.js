@@ -62,8 +62,8 @@ function getTotalPrice() {
 function handleOpenModal() {
   setOrderTypes();
 
-  nameClient = prompt('Digite seu nome');
-  addressClient = prompt('Digite seu endereço');
+  nameClient = prompt('Qual seu nome?');
+  addressClient = prompt('Qual seu endereço?');
 
   const container = document.querySelector('.container');
   const modal = document.querySelector('.modal');
@@ -114,8 +114,7 @@ function handleSendOrder() {
 Total: R$ ${totalValue.toFixed(2)}
 
 Nome: ${nameClient}
-Endereço: ${addressClient}
-`;
+Endereço: ${addressClient}`;
 
   const encodeOrder = encodeURIComponent(textOrder);
 
