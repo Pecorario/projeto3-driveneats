@@ -111,7 +111,7 @@ function handleSendOrder() {
 - Prato: ${plate.name}
 - Bebida: ${drink.name}
 - Sobremesa: ${dessert.name}
-Total: R$ ${totalValue.toFixed(2)}
+Total: R$ ${totalValue.toFixed(2).toString().replace('.', ',')}
 
 Nome: ${nameClient}
 Endereço: ${addressClient}`;
